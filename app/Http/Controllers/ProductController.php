@@ -18,6 +18,15 @@ class ProductController extends Controller
         return view('products.index', compact('products'));
     }
 
+    // This is a new method, separate from index(), create(), etc.
+    public function shop()
+    {
+        // We eager load 'category' to show it on the shop page
+        $products = Product::with('category')->latest()->paginate(12);
+
+        return view('shop.index', compact('products'));
+    }
+
     /**
      * Show the form for creating a new resource.
      */

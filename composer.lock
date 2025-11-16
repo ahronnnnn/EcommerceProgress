@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d4f4473b8aeac686ea5b6cc535c0756a",
+    "content-hash": "076b4a1920e889863918862efabf83df",
     "packages": [
         {
             "name": "anhskohbo/no-captcha",
@@ -69,6 +69,72 @@
                 "source": "https://github.com/anhskohbo/no-captcha/tree/3.7.0"
             },
             "time": "2025-02-25T18:53:34+00:00"
+        },
+        {
+            "name": "ashraam/laravel-simple-cart",
+            "version": "v2.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Ashraam/laravel-simple-cart.git",
+                "reference": "73426cbcaeed70b847c0bfb5879e706dcb5c54e3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Ashraam/laravel-simple-cart/zipball/73426cbcaeed70b847c0bfb5879e706dcb5c54e3",
+                "reference": "73426cbcaeed70b847c0bfb5879e706dcb5c54e3",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/events": "^10.0|^11.0|^12.0",
+                "illuminate/session": "^10.0|^11.0|^12.0",
+                "illuminate/support": "^10.0|^11.0|^12.0",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.6",
+                "orchestra/testbench": "^8.0|^9.0|^10.0",
+                "pestphp/pest": "^3.7"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Cart": "Ashraam\\LaravelSimpleCart\\Facades\\Cart"
+                    },
+                    "providers": [
+                        "Ashraam\\LaravelSimpleCart\\LaravelSimpleCartServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ashraam\\LaravelSimpleCart\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Romain BERTOLUCCI",
+                    "email": "romain.bertolucci@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Simple session based cart for Laravel 12",
+            "homepage": "https://github.com/ashraam/laravelsimplecart",
+            "keywords": [
+                "ashraam",
+                "cart",
+                "laravel",
+                "laravelsimplecart"
+            ],
+            "support": {
+                "issues": "https://github.com/Ashraam/laravel-simple-cart/issues",
+                "source": "https://github.com/Ashraam/laravel-simple-cart/tree/v2.0.6"
+            },
+            "time": "2025-07-25T14:56:32+00:00"
         },
         {
             "name": "brick/math",
@@ -8479,5 +8545,5 @@
         "php": "^8.2"
     },
     "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }
